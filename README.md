@@ -39,3 +39,14 @@ terraform validate
 terraform plan
 terraform apply
 ````
+
+# Update
+When changing the version of a provider, run the following command:
+```shell
+terraform init -upgrade
+```
+
+When something was changed manually, run the following command:
+```shell
+terraform apply -refresh-only
+```
